@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  /* Universel */
+}
+.container{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  /* classname */
+}
+#box{
+  background-color: azure;
+  width: 49%;
+  display: inline-block;
+  /* idname */
+}
+div{
+  background-color: aqua;
+  width: 100%;
+  height: 5%;
+  margin-top: 1px;
+  /* tagname */
+}
+
+.sample{
+  width: 49%;
+  display: inline-block;
+}
+.container #box{
+  /* descendant */
+  background-color: tomato;
+}
+
+
+.sample,#box{
+  height: 8%;
+  /* sibling combinatro  both*/
+}
+
+.sample+#box {
+  background-color: yellow;
+  /* adjecent sibling ele after .sample */
+}
+
+.container>.sample{
+  border: 2px solid red ;
+  /* child ccombinator */
+}
+
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input[type="radio"]+label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="radio"]+label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* transform: translateY(-50%); */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+input[type="radio"]:checked+label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+  content: '\558';
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input[type="checkbox"]+label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+input[type="checkbox"]+label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked+label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+  content: "\2132";
+  /* Unicode character for checkmark */
+  text-align: center;
+  color: #fff;
+}
+
+.container:nth-of-type(2n){
+  color: #007bff;
+}
+.container:nth-child(2){
+  color: #007bff;
+}
