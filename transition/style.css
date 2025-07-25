@@ -1,0 +1,43 @@
+
+* {
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  user-select:none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* Only padding added to box width */
+}
+:root {
+  font-size: 0.5vmax;
+}
+html{
+  body {
+      background-color: black;
+      width: 100vw;
+      padding: .1% .1% 0 0.1%;
+      #heading{
+        width: 100%;
+        padding: 1%;
+        font-size: 3rem;
+        border-radius: 6px;
+        border-bottom: 1px solid rgb(0, 255, 0);
+        text-align: center;
+      }
+      p{
+        font-size: 2rem;
+        text-align: center;
+        color: #ff0;
+        /* direction: rtl; */
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 10%;
+        border-radius: 5px;
+        padding: 5px;        /* unicode-bidi:isolate-override; */
+        /* word-spacing: -2px; */
+      }
+      p:hover{
+        box-shadow: 0 0 8px 1px rgb(0, 60, 255);
+      }
+    }
+}
