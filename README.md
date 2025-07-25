@@ -26,3 +26,7 @@ Welcome to my CSS repository! 🎉 This repository is a collection of CSS code e
 #### *Thanks for Visiting! 👋*
 
 ##### I hope you find this repository helpful in your CSS journey! If you have any questions or feedback, feel free to open an issue or reach out to me directly. 😊
+
+
+### Author 
+#### Devendra Kumar 
