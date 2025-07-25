@@ -1,0 +1,79 @@
+* {
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* Only padding added to box width */
+}
+
+:root {
+  font-size: 1vmax;
+}
+
+body {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+  width: 100vw;
+  .grid{
+    display: grid;
+    gap: 2px;
+    padding: 2px;
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100%;
+    grid-template-columns: repeat(8,1fr);
+    /* grid-template-columns: repeat(auto-fit,minmax(100px,150px)); */
+    background-color: black;
+    div{
+      width: 100%;
+    }
+    .box1{
+      grid-column: 2/8;
+      background-color: tomato;
+      grid-row: 1/3;
+    }
+    .box6{
+      grid-column: 8/9;
+      grid-row: 3/9;
+      background-color: wheat;
+    }
+    .box3{
+      grid-column: 2/5;
+      grid-row: 3/6;
+      background-color: aqua;
+    }
+    .box4{
+      grid-column: 8/9;
+      grid-row: 1/3;
+      background-color: teal;
+    }
+    .box2{
+      grid-row: 1/9;
+      background-color: teal;
+    }
+    .box7{
+      background-color: green;
+      grid-row: 3/6;
+      grid-column: 5/8;
+    }
+    .box5{
+      grid-row: 6/9;
+      background-color: blue;
+      grid-column: 2/5;
+    }
+    .box8{
+      background-color: brown;
+      grid-column: 5/8;
+      grid-row: 6/9;
+    }
+  }
+}
