@@ -1,0 +1,21 @@
+p{
+  div{
+    color: red;
+  }
+  h1{
+    color: red;
+  }
+}
+h1{
+  p{
+    color: red;
+  }
+  div{
+    color:  rebeccapurple;
+  }
+}
+
+/* 
+HTML
+ a{p} block level el never has a child of other type /caste  block element
+ */
