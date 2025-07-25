@@ -1,0 +1,51 @@
+.cont{
+  width:100%;
+  margin-top: 50px;
+  height: 50%;
+  background-color: black;
+  position:sticky;
+  text-align: center;
+  div{
+    color: black;
+    width: 15%;
+    display: inline-block;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 98vw;
+  height: 100vh;
+}
+
+.cont .box1{
+  background-color: red;
+  position: relative;
+  top: 15px;
+}
+.cont .box2{
+  background-color: white;
+  position:absolute; 
+  /* to move this box according to any other peatent then give the pearent possion other than static |  cont has sticky type */ 
+  top: 2px;
+  left: 2px;
+}
+.cont .box3{
+  position: fixed;
+  top: 2px;
+  /* alwayschange position  based on view port  And if they apier on dispaly than they never change or left the display | block ele convert into inline ele */
+  background-color: green;
+  z-index: 1;
+}
+.cont .box4{
+  position:sticky;
+  background-color: yellow;
+  top: 20px;
+}
+.cont .box5{
+  background-color: blue;
+}
+
