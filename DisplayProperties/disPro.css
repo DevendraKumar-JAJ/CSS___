@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+  width: 100vw;
+  text-align: center;
+  padding: 1% 1% 0 1%;
+}
+*{
+  color: aqua;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* Only padding added to box width */
+}
+:root{
+  font-size: 1vmax;
+}
+
+#nav{
+  width: 100%;
+  background-color: gray;
+  padding: 0.2%;
+  border-radius: 0.5vmax;
+}
+
+.box1{
+  background-color: aliceblue;
+  width: 49%;
+  display: inline-block;
+}
+.box2{
+  display: inline;
+  display: inline-block;
+  /* inline element doesnot support height width and horizontal margin */
+  width: 49%;
+  background-color: aqua;
+}
